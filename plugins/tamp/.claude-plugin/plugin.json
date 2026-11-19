@@ -1,0 +1,8 @@
+{
+  "name": "tamp",
+  "description": "Keeps your Mac awake just long enough for Claude Code to compact an idle session.",
+  "version": "0.1.0",
+  "author": { "name": "murphyjt" },
+  "homepage": "https://github.com/murphyjt/tamp",
+  "license": "MIT"
+}

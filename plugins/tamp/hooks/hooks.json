@@ -1,0 +1,11 @@
+{
+  "description": "After each reply, keep the Mac awake for 65 minutes (on power) when the session can idle-compact; release on exit.",
+  "hooks": {
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/tamp.sh\"", "timeout": 10 }] }
+    ],
+    "SessionEnd": [
+      { "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/tamp.sh\" release", "timeout": 10 }] }
+    ]
+  }
+}
